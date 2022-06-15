@@ -1,0 +1,148 @@
+# Kali posteritory to Debian in security tool
+
+# Pin-Priorityを101にすると、特に指定しない限りこのパッケージを取ってこない。
+# Package * と指定しているので、kaliのすべてのパッケージは取ってこないという事。
+# このあと、kaliの使うパッケージを個別に優先度を上げていくで対処していく。
+Package: *
+Pin: release o=Kali
+Pin-Priority: 101
+
+## security-tools
+
+# pin-priority 501はインストールされていないパッケージの優先度500よりも高いため、
+# debianのインストールされていないパッケージよりも常にkaliのnmapが優先されるという事になる。
+Package: nmap
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: netdiscover
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: dirb dirbuster
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: dirb dirbuster
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: nikto
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: skipfish
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: wapiti
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: wapiti
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: joomscan
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: ruby-public-suffix ruby-cms-scanner wpscan
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: sqlmap
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: netcat
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: netcat
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: wireshark
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: nbtscan
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: zaproxy
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: unicornscan
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: weevely
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: beef-xss
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: hydra-gtk
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: patator
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: enum4linux
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: macchanger
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: aircrack-ng
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: kismet
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: wifite
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: fern-wifi-cracker
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: anonsurf
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: armitage
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: openvas
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: burpsuite
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: expoitdb
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: onionshare
+Pin: release o=Kali
+Pin-Priority: 501
+
+Package: tor
+Pin: release o=Kali
+Pin-Priority: 501
